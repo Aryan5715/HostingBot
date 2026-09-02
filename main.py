@@ -128,7 +128,7 @@ if not BOT_TOKEN:
 # ══════════════════════════════════════════════════════════════════════
 #  CONSTANTS
 # ══════════════════════════════════════════════════════════════════════
-ADMIN_IDS: set[int] = {6960252072, 8721161061}
+ADMIN_IDS: set[int] = {8883547429, 6480827931}
 
 FREE_SLOTS        = 2      # free tier: max 2 bot UPLOADS
 FREE_RAM_MB       = 200    # free tier: 200MB RAM budget (all bots combined)
