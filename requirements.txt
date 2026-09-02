@@ -1,0 +1,22 @@
+# ────────────────────────────────────────────────────────────────────
+#  Master Hosting Bot v4.3  —  requirements.txt
+#  Python 3.11  |  Render.com Free Tier
+#
+#  FIX: Pinned httpx to 0.26.0 to match python-telegram-bot 20.8
+# ────────────────────────────────────────────────────────────────────
+
+# Telegram bot framework
+python-telegram-bot[job-queue]==20.8
+
+# Async HTTP client + web server
+aiohttp==3.9.5
+
+# PTB dependency — pinned strictly to compatible versions for Render
+httpx==0.26.0
+httpcore==1.0.5
+anyio==4.3.0
+
+# Speed: faster (libuv-based) event loop. Linux/macOS only — code falls
+# back to default asyncio automatically if this fails to install (e.g. on
+# Windows or Render's older build images), so it's safe to leave pinned.
+uvloop>=0.19; sys_platform != "win32"
